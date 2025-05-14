@@ -1,0 +1,47 @@
+Test in /Users/irinastareva/Desktop/Индивидуальный проект/tolkien-langdetect/datasets/train/
+Language, total, precision
+Language: ad
+Right: 28, Wrong: 0 Total: 28
+Accuracy: 100.0 
+Language: nd
+Right: 11, Wrong: 13 Total: 24
+Accuracy: 45.8333333333 
+Language: tn
+Right: 6, Wrong: 0 Total: 6
+Accuracy: 100.0 
+Language: sn
+Right: 37, Wrong: 1 Total: 38
+Accuracy: 97.3684210526 
+Language: bs
+Right: 4, Wrong: 0 Total: 4
+Accuracy: 100.0 
+Language: qn
+Right: 78, Wrong: 5 Total: 83
+Accuracy: 93.9759036145 
+======TOTAL:
+	Right: 164, Wrong: 19 Total: 183
+	Precision: 89.6174863388 
+
+Test in /Users/irinastareva/Desktop/Индивидуальный проект/tolkien-langdetect/datasets/test/
+Language, total, precision
+Language: ad
+Right: 10, Wrong: 0 Total: 10
+Accuracy: 100.0 
+Language: nd
+Right: 1, Wrong: 6 Total: 7
+Accuracy: 14.2857142857 
+Language: tn
+Right: 4, Wrong: 1 Total: 5
+Accuracy: 80.0 
+Language: sn
+Right: 6, Wrong: 0 Total: 6
+Accuracy: 100.0 
+Language: bs
+Right: 1, Wrong: 0 Total: 1
+Accuracy: 100.0 
+Language: qn
+Right: 18, Wrong: 0 Total: 18
+Accuracy: 100.0 
+======TOTAL:
+	Right: 40, Wrong: 7 Total: 47
+	Precision: 85.1063829787 

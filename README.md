@@ -1,1 +1,1 @@
-# tolkien-langdict
+# tolkien-langdetect

@@ -9,7 +9,7 @@ Original file is located at
 
 import os
 
-import langdetect as ld
+import tolkien_langdetect as tld
 
 TESTING_LANGUAGES = {"sn": "Sindarin", "qn": "Quenya", "nd": "Noldorin", "ad": "Adûnaic", "tn": "Telerin", "bs": "Black Speech"}
 
@@ -30,7 +30,7 @@ def test_data(profiles, dir_path):
                 text = f.read()
                 f.close()
                 try:
-                    results = ld.detect_language(text, profiles)
+                    results = tld.detect_language(text, profiles)
                     detected_language = results[0][0]
 
                     if detected_language == language: lang_right += 1
@@ -53,11 +53,11 @@ def test_data(profiles, dir_path):
 
 
 def test_accuracy():
-    profiles = ld.create_languages_profiles()
+    profiles = tld.create_languages_profiles()
     path_cwd = os.getcwd()
 
-    test_data(profiles, path_cwd + ld.PATH_TRAIN)
-    test_data(profiles, path_cwd + ld.PATH_DATASETS + "test/")
+    test_data(profiles, path_cwd + tld.PATH_TRAIN)
+    test_data(profiles, path_cwd + tld.PATH_DATASETS + "test/")
 
 
 test_accuracy()
